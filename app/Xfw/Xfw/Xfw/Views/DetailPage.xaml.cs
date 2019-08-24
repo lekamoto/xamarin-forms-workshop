@@ -13,10 +13,10 @@ namespace Xfw.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailPage : ContentPage
     {
-        public DetailPage(Item gangMember)
+        public DetailPage(Movie movie)
         {
             InitializeComponent();
-            BindingContext = gangMember;
+            BindingContext = movie;
         }
     }
 }
