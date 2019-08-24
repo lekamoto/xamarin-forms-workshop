@@ -40,7 +40,7 @@ namespace Xfw.ViewModels
             }
         }
 
-        protected virtual Task Initialize()
+        public virtual Task Initialize()
             => Task.CompletedTask;
 
     }

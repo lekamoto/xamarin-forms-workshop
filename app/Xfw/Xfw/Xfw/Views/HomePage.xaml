@@ -7,6 +7,39 @@
              Title="Home"
              x:Class="Xfw.Views.HomePage">
     <ContentPage.Content>
-        
+        <ListView 
+            HasUnevenRows="True"
+            ItemsSource="{Binding Items}"
+            IsRefreshing="{Binding IsBusy}"
+            CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                   Grid.Row="0"
+                                   Grid.RowSpan="2"
+                                   Source="{Binding PictureUrl}" />
+                            <Label Grid.Column="1" 
+                                Grid.Row="0"
+                                Text="{Binding Title}"
+                                FontSize="Medium"/>
+                            <Label Grid.Column="1" 
+                                Grid.Row="1"
+                                Text="{Binding Description}"
+                                FontSize="Small"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate> 
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
