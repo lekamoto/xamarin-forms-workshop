@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xfw.Models;
 using Xfw.ViewModels;
 
 namespace Xfw.Views
@@ -26,6 +27,16 @@ namespace Xfw.Views
         protected override async void OnAppearing()
         {
             await ViewModel.Initialize();
+        }
+
+        private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item == null)
+                return;
+
+            var gangMember = e.Item as Item;
+
+            await Navigation.PushAsync(new DetailPage(gangMember));
         }
     }
 }

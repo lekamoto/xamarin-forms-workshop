@@ -9,13 +9,17 @@
     <ContentPage.Content>
         <ListView 
             HasUnevenRows="True"
+            SelectionMode="None"
+            SeparatorColor="Transparent"
             ItemsSource="{Binding Items}"
             IsRefreshing="{Binding IsBusy}"
+            ItemTapped="ListView_ItemTapped"
             CachingStrategy="RecycleElement">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
+                        <Grid Margin="16" 
+                              ColumnSpacing="4"                         RowSpacing="4">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto" />
                                 <RowDefinition Height="auto" />
@@ -26,6 +30,7 @@
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0"
                                    Grid.Row="0"
+                                   BackgroundColor="Red"
                                    Grid.RowSpan="2"
                                    Source="{Binding PictureUrl}" />
                             <Label Grid.Column="1" 

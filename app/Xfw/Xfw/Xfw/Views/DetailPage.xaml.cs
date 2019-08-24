@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xfw.Models;
 
 namespace Xfw.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailPage : ContentPage
     {
-        public DetailPage()
+        public DetailPage(Item gangMember)
         {
             InitializeComponent();
+            BindingContext = gangMember;
         }
     }
 }
