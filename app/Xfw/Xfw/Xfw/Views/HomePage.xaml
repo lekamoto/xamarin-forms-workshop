@@ -4,8 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Movies"
-             BackgroundColor="#121212"
+             Title="Filmes"
              x:Class="Xfw.Views.HomePage">
     <ContentPage.Content>
         <ListView 
@@ -27,7 +26,7 @@
                             <Image Grid.Row="0"
                                    HeightRequest="220"
                                    Aspect="AspectFill"
-                                   Source="{Binding FullBackdropPath}" />
+                                   Source="{Binding FullBackdropPath}" /> 
                             <BoxView 
                                 Grid.Row="0"
                                 Grid.RowSpan="2"

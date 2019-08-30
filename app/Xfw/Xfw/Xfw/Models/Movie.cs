@@ -30,11 +30,12 @@ namespace Xfw.Models
 
         [JsonIgnore]
         public string FullBackdropPath
-            => $"https://image.tmdb.org/t/p/w780{BackdropPath}";
+       => $"https://image.tmdb.org/t/p/w780/{BackdropPath}";
 
         [JsonIgnore]
         public string FullPosterPath
-           => $"https://image.tmdb.org/t/p/w342{PosterPath}";
-
+           => $"https://image.tmdb.org/t/p/w342/{PosterPath}";
     }
+
 }
+

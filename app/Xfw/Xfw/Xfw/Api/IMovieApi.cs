@@ -12,4 +12,5 @@ namespace Xfw.Api
         [Get("/movie/upcoming?api_key={apiKey}")]
         Task<UpcomingResponse> GetUpcoming(string apiKey);
     }
+
 }

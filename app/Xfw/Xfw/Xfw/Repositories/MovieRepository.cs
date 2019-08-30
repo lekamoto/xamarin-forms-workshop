@@ -24,7 +24,7 @@ namespace Xfw.Repositories
                 if (response == null)
                     return ("Falha na requisicao, tente novamente", null);
 
-                if(response.Movies?.Count == 0)
+                if (response.Movies?.Count == 0)
                     return ("Nenhum filme encontrado!", null);
 
                 return (null, response.Movies);
