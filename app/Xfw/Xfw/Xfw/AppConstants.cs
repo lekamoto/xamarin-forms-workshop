@@ -6,9 +6,9 @@ namespace Xfw
 {
     public static class AppConstants
     {
-        public const string API_ENDPOINT = "https://api.themoviedb.org/3";
+        public const string API_ENDPOINT = "http://livrowebservices.com.br/rest/carros";
 
-        public const string API_KEY = "ad332258020257fb88e2cc468225dcb0";
+        public const string API_KEY = "da2-mbkxlhk7bze2xfukhvls4ht4wi";
     }
 }
 

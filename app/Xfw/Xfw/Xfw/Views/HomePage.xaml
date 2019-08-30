@@ -26,7 +26,7 @@
                             <Image Grid.Row="0"
                                    HeightRequest="220"
                                    Aspect="AspectFill"
-                                   Source="{Binding FullBackdropPath}" /> 
+                                   Source="{Binding urlFoto}" /> 
                             <BoxView 
                                 Grid.Row="0"
                                 Grid.RowSpan="2"
@@ -39,17 +39,17 @@
                                 Grid.Row="0"  Grid.RowSpan="2">
                                 <Label 
                                 TextColor="#E1E1E1" 
-                                Text="{Binding OriginalTitle}"
+                                Text="{Binding nome}"
                                 FontAttributes="Bold"
                                 FontSize="22"/>
                                 <Label
                                 TextColor="#A5A5A5"
-                                Text="{Binding ReleaseDate, StringFormat='release date: {0}' }"
+                                Text="{Binding desc }"
                                 LineBreakMode="WordWrap"
                                 FontSize="18"/>
                                 <Label
                                 TextColor="#A5A5A5"
-                                Text="{Binding Popularity, StringFormat='popularity: {0} votes' }"
+                                Text="{Binding tipo }"
                                 LineBreakMode="WordWrap"
                                 FontSize="18"/>
                             </StackLayout>

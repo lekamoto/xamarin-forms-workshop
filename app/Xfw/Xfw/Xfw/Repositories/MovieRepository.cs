@@ -19,7 +19,7 @@ namespace Xfw.Repositories
         {
             try
             {
-                var response = await movieApi.GetUpcoming(AppConstants.API_KEY);
+                var response = await movieApi.GetUpcoming();
 
                 if (response == null)
                     return ("Falha na requisicao, tente novamente", null);

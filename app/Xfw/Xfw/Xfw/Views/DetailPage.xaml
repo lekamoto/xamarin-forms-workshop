@@ -27,7 +27,7 @@
                     BackgroundColor="#C16C7A"
                     Aspect="AspectFill"
                     Opacity="25"
-                    Source="{Binding FullBackdropPath}" />
+                    Source="{Binding urlFoto}" />
                 <Frame
                     BackgroundColor="#FFFFFF"
                     Margin="16"
@@ -41,7 +41,7 @@
                     Grid.Row="0"
                     BackgroundColor="#C16C7A"
                     Aspect="AspectFill"
-                    Source="{Binding FullPosterPath}" />
+                    Source="{Binding nome}" />
                 </Frame>
                 <StackLayout
                     Grid.Row="2"
@@ -50,27 +50,17 @@
                     Spacing="16">
                     <Label 
                    Margin="16, 0"
-                   Text="{Binding OriginalTitle}" 
+                   Text="{Binding nome}" 
                    FontAttributes="Bold" 
                    FontSize="24"/>
                     <BoxView HeightRequest="1"  Opacity="0.4" />
                     <Label
                     Margin="16, 0"
-                    Text="{Binding Overview}" 
+                    Text="{Binding desc}" 
                     TextColor="#A5A5A5"
                     FontSize="Medium"/>
                     <BoxView HeightRequest="1" Color="#1E1E1E" Opacity="0.4" />
-                    <Label
-                    Margin="16, 0"
-                    Text="{Binding Popularity, StringFormat='Popularity: {0}'}" 
-                    TextColor="#A5A5A5"
-                    FontSize="Medium"/>
-                    <BoxView HeightRequest="1" Color="#1E1E1E" Opacity="0.4" />
-                    <Label
-                    Margin="16, 16, 16, 32"
-                    Text="{Binding ReleaseDate, StringFormat='Release date: {0}'}" 
-                    TextColor="#A5A5A5"
-                    FontSize="Medium"/>
+                  
                 </StackLayout>
             </Grid>
            

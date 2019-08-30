@@ -9,8 +9,8 @@ namespace Xfw.Api
 {
     public interface IMovieApi
     {
-        [Get("/movie/upcoming?api_key={apiKey}")]
-        Task<UpcomingResponse> GetUpcoming(string apiKey);
+        [Get("")]
+        Task<UpcomingResponse> GetUpcoming();
     }
 
 }
